@@ -1,3 +1,17 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    // 기존 플러그인들...
+    "prettier"
+  ],
+  "rules": {
+    // 기존 ESLint 규칙들...
+    "prettier/prettier": "error"
+  }
 }
